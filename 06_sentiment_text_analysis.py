@@ -1,5 +1,5 @@
-# import nltk
-# nltk.download('punkt')
+import nltk
+nltk.download('punkt')
 from textblob import TextBlob
 from newspaper import Article
 
@@ -17,7 +17,7 @@ print(text)
 blob = TextBlob(text)
 sentiment = blob.sentiment.polarity
 # here polarity defines that if it is -1.0 the text is a negative one and if it is in the side of 0 then neutral one and if it is near 1 then positive one 
-# Return a tuple of form (polarity, subjectivity ) where polarity is a float within the range [-1.0, 1.0] and subjectivity is a float within the range [0.0, 1.0] where 0.0 is very objective and 1.0 is very subjective. :rtype: namedtuple of the form Sentiment(polarity, subjectivity)
+
 print(sentiment)
 
 with open('senti.txt','r') as f:
